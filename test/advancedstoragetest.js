@@ -18,8 +18,8 @@ contract ("Advanced Storage", () =>{
 
      it ("should return the entire array", async () =>{
         let rawIds = await storage.getAll();
-        let result =  rawIds.map(id=> id.toNumber());
-        assert.deepEqual(result,[10,5,8,10,5], "returns the array")
+        let result =  rawIds.map(id=> id.toNumber());                       // created a copy of the array via the map method. I use the toNumber method because truffle uses BN (big number)
+        assert.deepEqual(result,[10,5,8,10,5], "returns the array")         // I used deepequal isntead of assert.equal, because with the latter, the copared variables must be exactly the same. i.e assert.equal will see if I am comparing the exact same elements of the exact same array. assert.deepequal will check only if the value of the elements is identical
 
      });
 
