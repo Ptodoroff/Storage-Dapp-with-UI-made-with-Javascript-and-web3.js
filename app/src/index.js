@@ -32,8 +32,8 @@ const initWeb3 = () => {
 
 
 const initContract =  () => {                                // this is the fn that will initialise the instance of the contract
-    
-    return  new web3.eth.Contract(Storage.abi,Storage.networks[5777].address)
+    const key = Object.keys(Storage.networks)[0]
+    return  new web3.eth.Contract(Storage.abi,Storage.networks[key].address)
 }
 
 
