@@ -46,7 +46,7 @@ const  initApp = () => {                                     //initialises the a
     web3.eth.getAccounts()
     .then(_accounts=>{
         accounts=_accounts;
-        return Storage.methods.getAll().call()
+        return storage.methods.getAll().call()
     })
     .then((result)=>{
         $data.innerHTML= result.join(', ');
@@ -54,7 +54,7 @@ const  initApp = () => {                                     //initialises the a
 
     $addData.addEventListener('submit', (event) =>{
         event.preventDefault();
-        Storage
+        storage
         .methods
         .add(event.target.elements[0].value)
         .send({from:accounts[0]})
