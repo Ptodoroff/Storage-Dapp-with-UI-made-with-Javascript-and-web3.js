@@ -2404,12 +2404,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x4a0De5521374939e11010a58e4901E237Dc32f59",
-      "transactionHash": "0x0d2723fdbeee1d284092bbcd5574f76d75120820b5815e145a6e70affb33d83a"
+      "address": "0xF92955Bb7165cCEC8CdBC0078585a24952Ad2D70",
+      "transactionHash": "0xa1be9cd8cb8694800ae43f94a89420e85f0de9d681b4bbece679d241b86cf937"
     }
   },
   "schemaVersion": "3.4.8",
-  "updatedAt": "2022-08-13T19:18:32.051Z",
+  "updatedAt": "2022-08-14T00:04:12.353Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
